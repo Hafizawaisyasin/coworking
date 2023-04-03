@@ -7,7 +7,7 @@ import { Box, Hidden, styled, useTheme } from "@mui/material";
 import Menu from "./Menu";
 import HamburgerMenu from "./HamburgerMenu";
 import { hexToRgba } from "../../utils/colors";
-import Logo from "../../public/myLogo.png";
+
 
 const Navbar = () => {
   const [scrolled, setIsScrolled] = useState(false);
@@ -36,12 +36,12 @@ const Navbar = () => {
           }}
         >
           <div style={{ backgroundColor: "#f0f0f0" }}>
-            <Image
+            {/* <Image
               src="myLogo.png"
               alt="Landscape picture"
               width={800}
               height={500}
-            />
+            /> */}
           </div>
           <Box sx={{ display: { md: "block", xs: "none" } }}>
             <Menu />
@@ -58,7 +58,7 @@ const Navbar = () => {
 const NavLogo = ({ scrolled }) => {
   return (
     <div className="logo">
-      <Image src="/myLogo.png" alt="Logo" width={50} height={50} />
+      {/* <Image src="/myLogo.png" alt="Logo" width={50} height={50} /> */}
     </div>
   );
 };
