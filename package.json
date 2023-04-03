@@ -32,6 +32,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "cypress": "^12.9.0",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10"
   }
