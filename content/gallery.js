@@ -1,6 +1,10 @@
+import One from "../public/one.jpeg";
+import Two from "../public/two.jpeg";
+import Three from "../public/three.jpeg";
+
 const images = [
   {
-      img: "https://i.ibb.co/nzkN0N0/1.jpg",
+      img: One.src,
       title: "coworking",
   },
   {
@@ -16,7 +20,7 @@ const images = [
       title: "coworking",
   },
   {
-      img: "https://i.ibb.co/yRwgQtH/5.jpg",
+      img:Three.src,
       title: "coworking",
   },
   {
@@ -24,7 +28,7 @@ const images = [
       title: "coworking",
   },
   {
-      img: "https://i.ibb.co/m85Ngqm/8.jpg",
+      img:Two.src,
       title: "coworking",
   },
   {

@@ -4,10 +4,12 @@ import ImageListItem from "@mui/material/ImageListItem";
 import { Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 import SectionContainer from "../../components/SectionContainer";
 import images from "../../content/gallery";
+import One from "../../public/one.jpeg"
 
 const Gallery = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+    console.log('jkj',images)
 
     return (
       <SectionContainer
@@ -20,8 +22,8 @@ const Gallery = () => {
             {images.map((item) => (
               <ImageListItem key={item.img}>
                 <img
-                  src={`${item.img}?w=260&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=260&fit=crop&auto=format&dpr=2 2x`}
+                  src={item.img}
+                  srcSet={item.img}
                   alt={item.title}
                   loading="lazy"
                 />
