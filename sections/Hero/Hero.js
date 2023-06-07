@@ -3,53 +3,47 @@ import React from "react";
 import HeroFouter from "./HeroFooter";
 
 const Hero = () => {
-    const theme = useTheme();
-    return (
-      <>
-        <Box
-          sx={{
-            position: "relative",
-            height: "500px",
-          }}
-        >
-          <Background
-            src="https://i.ibb.co/1XMj9s4/home.jpg"
-            loading="lazy"
-            alt="code hub coworking"
-          />
-          <Container maxWidth="lg" sx={{ pt: 15, pb: 20 }}>
-            <Typography
-              variant="h4"
-              sx={{
-                color: "white",
-                fontWeight: "500",
-                textShadow: "2px 2px 4px rgb(0 0 0 / 45%)",
-                [theme.breakpoints.down("md")]: {
-                  fontSize: 24,
-                },
-                maxWidth: "600px",
-              }}
-            >
-              Whether you are an established freelancer or a developing startup,
-              discover our space and flexible solutions to scale your business.
-            </Typography>
-          </Container>
-        </Box>
-        <HeroFouter />
-      </>
-    );
+  const theme = useTheme();
+  return (
+    <>
+      <Box
+        sx={{
+          position: "relative",
+          height: "500px",
+        }}
+      >
+        <Background src="https://i.ibb.co/1XMj9s4/home.jpg" loading="lazy" alt="code hub coworking" />
+        <Container maxWidth="lg" sx={{ pt: 15, pb: 20 }}>
+          <Typography
+            variant="h4"
+            sx={{
+              color: "white",
+              fontWeight: "500",
+              textShadow: "2px 2px 4px rgb(0 0 0 / 45%)",
+              [theme.breakpoints.down("md")]: {
+                fontSize: 24,
+              },
+              maxWidth: "600px",
+            }}
+          >
+Unlock Your Business Potential. Explore our dynamic coworking space and flexible solutions tailored for freelancers and startups.         </Typography>
+        </Container>
+      </Box>
+      <HeroFouter />
+    </>
+  );
 };
 
 const Background = styled("img")({
-    position: "absolute",
-    width: "100%",
-    height: "100%",
-    left: 0,
-    top: 0,
-    zIndex: -1,
-    objectFit: "cover",
-    objectPosition: "center",
-    filter: "brightness(80%)",
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  left: 0,
+  top: 0,
+  zIndex: -1,
+  objectFit: "cover",
+  objectPosition: "center",
+  filter: "brightness(80%)",
 });
 
 export default Hero;
